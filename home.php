@@ -44,7 +44,7 @@ if( $myposts ){
               <?php
 $image = get_field('img'); 
 if ($image) {
-    echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '" class="img-grid" />';
+    echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '" class="btn-grid" />';
 }
 ?>
               </button>
