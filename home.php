@@ -41,7 +41,12 @@ if( $myposts ){
                 <?php the_content(); ?>
               </p>
               <button class="btn-grid">
-              <?php the_field('img'); ?>
+              <?php
+$image = get_field('img'); 
+if ($image) {
+    echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '" class="img-grid" />';
+}
+?>
               </button>
             </div>
           </div>
